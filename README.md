@@ -1,0 +1,2 @@
+# GalacticGazetteFrontend
+React web page
