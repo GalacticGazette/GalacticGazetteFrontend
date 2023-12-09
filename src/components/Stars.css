@@ -1,0 +1,76 @@
+@import './StarsVars.css';
+
+.stars {
+    position: absolute;
+    top: 0;
+    bottom: 20em;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: transparent;
+    z-index: 0;
+}
+
+#little-stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: var(--lit-stars);
+    animation: star-mov 150s linear infinite;
+}
+
+#little-stars:after {
+    content: "";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: var(--lit-stars);
+}
+
+#medium-stars {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: var(--med-stars);
+    animation: star-mov 100s linear infinite;
+}
+
+#medium-stars:after {
+    content: "";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: var(--med-stars);
+}
+
+#big-stars {
+    background: transparent;
+    width: 3px;
+    height: 3px;
+    box-shadow: var(--big-stars);
+    animation: star-mov 50s linear infinite;
+}
+
+#big-stars:after {
+    content: "";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: var(--big-stars);
+}
+
+@keyframes star-mov {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
