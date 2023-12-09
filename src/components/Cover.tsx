@@ -8,7 +8,7 @@ const Cover = () => {
 
     return (
         <div className='big-container' onMouseEnter={() => setShowLink(true)} onMouseLeave={() => setShowLink(false)}>
-            <video src='videos/floating-in-space.mp4' autoPlay loop muted />
+            <video src='/videos/floating-in-space.mp4' autoPlay loop muted />
             <a className='video-link' style={{ opacity: showLink ? 1 : 0 }} href='https://www.youtube.com/watch?v=cWuzJBboQyE' target='_blank' rel='noreferrer'>
             <i className='fa-brands fa-youtube'></i> 'Floating In Space'
             </a>
