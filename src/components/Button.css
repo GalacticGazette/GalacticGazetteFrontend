@@ -1,0 +1,66 @@
+.button {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-solid {
+    background-color: var(--font);
+    color: var(--background);
+    border: 1px solid var(--font);
+    outline: 2px solid transparent; 
+    /*transition: outline 1s ease;*/
+    stroke: black;
+    stroke-width: 4;
+    -webkit-stroke: 1.5px var(--link); 
+    transition: sll 0.5s ease-in-out;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+}
+
+.button-solid:hover {
+    stroke-dashoffset: 0;
+  }
+
+/*
+.button-solid:hover {
+    outline: 4px solid var(--background);
+    animation: countour-animation infinite alternate; 
+}
+
+@keyframes countour-animation {
+    to {
+      outline-width: 6px;
+    }
+  }
+*/
+
+.button-outlined {
+    background-color: transparent;
+    color: var(--font);
+    border: 1px solid var(--font);
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+}
+
+.button-outlined:hover{
+    background: var(--font);
+    color: var(--background);
+}
+
+.button-small {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.button-medium {
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+.button-large {
+    padding: 12px 26px;
+    font-size: 20px;
+}
